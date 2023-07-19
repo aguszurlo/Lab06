@@ -1,4 +1,4 @@
-# Agustin Zurlo Redi
+# Agustin Zurlo Redi encode() method
 def menu():
     global option
     print("Menu\n"
