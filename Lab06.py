@@ -36,7 +36,6 @@ if __name__ == '__main__':
             continue
         elif option == 1:
             encode()
-            print("Encoded password:", new_password, end="\n\n")
             menu()
         elif option == 2:
             menu()
