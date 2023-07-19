@@ -24,6 +24,14 @@ def encode():
         print("Your password has been encoded and stored!\n")
     return new_password
 
+def decode():
+    decoded_pass = ''
+    for num in new_password:
+        new_num = str((int(num)-3) % 10)
+        decoded_pass += new_num
+    print(f'The encoded password is {new_password}, and the original password is {decoded_pass}.')
+    return 
+
 
 if __name__ == '__main__':
     option = int()
@@ -38,6 +46,7 @@ if __name__ == '__main__':
             encode()
             menu()
         elif option == 2:
+            decode()
             menu()
         elif option == 3:
             break
